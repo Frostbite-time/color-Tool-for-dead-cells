@@ -3,4 +3,4 @@
  colorTool_v2_english是它的英文版本，
  colorTool_install目前已经弃用，
  color_quick_GUI与color_quick都是尚未完成但仍在进行的项目，
- 使用了opencv和QT。
+ 本项目使用了opencv和QT。
