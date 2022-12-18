@@ -4,3 +4,4 @@
  colorTool_install目前已经弃用，
  color_quick_GUI与color_quick都是尚未完成但仍在进行的项目，
  本项目使用了opencv和QT。
+colorTool_v2.zip是打包好的程序
