@@ -669,7 +669,7 @@ int main()
 				}
 
 				string pic_mode = pic_mode_name[i_1][0].substr(0, pos_of_number+1);  //获取皮肤模式
-				//这一段检查是否为R5类
+				//这一段检查文件是否在名字中包含R5
 				if ((pic_mode_name[i_1][0].find_last_of("R") >= 0) && (pic_mode_name[i_1][0].find_last_of("R") < (pic_mode_name[i_1][0].length()))) {
 					if (pic_mode_name[i_1][0].at(pic_mode_name[i_1][0].find_last_of("R") + 2) >= '0' && pic_mode_name[i_1][0].at(pic_mode_name[i_1][0].find_last_of("R") + 2) <= '9') {
 						pic_mode = pic_mode_name[i_1][0].substr(0, getpos_string(pic_mode_name[i_1][0])+1);
@@ -702,7 +702,8 @@ int main()
 					for (int iny = 0; iny < plate_created.rows; iny++) {
 						for (int inx = 0; inx < plate_created.cols; inx++) {
 							if (plate_created.at<Vec4b>(iny, inx)[3] != 0) {
-
+								//关于这边现在在做什么我也记不清了，怪不得都说不断嵌套就会变成屎山代码。 不过我不会再次利用这些代码
+								//我可能会在1年内发布下一个软件时更新这些代码 （很可能到时候我已经无法读懂了）
 								for (int iyx = 0; iyx < src_zero.rows; iyx++) {
 									for (int iyy = 0; iyy < src_zero.cols; iyy++) {
 										if (src_zero.at<Vec4b>(iyx, iyy)[3] != 0) {
@@ -764,7 +765,7 @@ int main()
 			
 
 
-			
+			//这段区域内被注释掉的代码是被废弃的
 
 			
 		
@@ -1025,13 +1026,4 @@ int main()
 
 
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
+//抱歉我写了这样一段乱七八糟的代码，我添加了很多注释希望你能够理解，我在写这些的时候只是个不熟练的菜鸟
