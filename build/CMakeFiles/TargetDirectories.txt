@@ -1,0 +1,3 @@
+F:/Ctest/colorTools/coloringTool/build/CMakeFiles/colorTool_v2.dir
+F:/Ctest/colorTools/coloringTool/build/CMakeFiles/edit_cache.dir
+F:/Ctest/colorTools/coloringTool/build/CMakeFiles/rebuild_cache.dir
