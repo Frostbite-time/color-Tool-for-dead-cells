@@ -1,7 +1,7 @@
 # color-Tool-for-dead-cells
- colorTool_v2文件夹中的项目是是解决方案的存放地，也是上色工具代码的存放处，
- colorTool_v2_english是它的英文版本，
- colorTool_install目前已经弃用，
- color_quick_GUI与color_quick都是尚未完成但仍在进行的项目，
- 本项目使用了opencv和QT。
-colorTool_v2.zip是打包好的程序
+使用了opencv 4.7.0 版本\n
+
+使用mingw构建\n
+
+src文件夹中为源代码，分为英文和中文2个版本，构建时只需使用其中之一\n
+仓库中自带的cmakelists不一定适用，最好自行编写
